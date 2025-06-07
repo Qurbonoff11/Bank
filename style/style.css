@@ -1,3 +1,15 @@
-.border-slate-700{
-  box-shadow: 0 0 30px #334155, inset 0 0 30px #334155;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
