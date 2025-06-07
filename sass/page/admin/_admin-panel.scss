@@ -1,0 +1,6 @@
+@use "../../mixins" as *;
+@use "../../variables" as *;
+
+@use "./layout/components/header";
+@use "./layout/main/hero-sec";
+@use "./layout/components/footer";

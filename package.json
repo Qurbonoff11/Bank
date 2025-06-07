@@ -1,0 +1,24 @@
+{
+  "name": "bank",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "npx sass --watch ./sass/style.scss:./style/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Qurbonoff11/Bank.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Qurbonoff11/Bank/issues"
+  },
+  "homepage": "https://github.com/Qurbonoff11/Bank#readme",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.89.1"
+  }
+}
