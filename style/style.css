@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -10,6 +11,202 @@ ul, ol {
 
 a {
   text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  width: 100%;
+  height: 5rem;
+  background-color: #1d2530;
+}
+.header-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+  height: 100%;
+  border-bottom: 1px solid #d91717;
+}
+.header-cont-logo {
+  font-size: 30px;
+  font-weight: 500;
+  color: #d91717;
+  font-family: "Fredoka", sans-serif;
+  text-transform: uppercase;
+}
+.header-cont ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+}
+.header-cont ul li {
+  position: relative;
+  padding: 0 0.5rem;
+}
+.header-cont ul li button {
+  padding: 0;
+  border-radius: 0;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-family: "Fredoka", sans-serif;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  font-family: "Fredoka", sans-serif;
+}
+.header-cont ul li button::after {
+  content: "";
+  position: absolute;
+  top: none;
+  right: none;
+  bottom: -1.9rem;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #d91717;
+  transition: all 0.3s ease-in-out;
+}
+.header-cont ul li button:hover {
+  color: #d91717;
+}
+.header-cont ul li button:hover::after {
+  left: 0;
+  width: 100%;
+}
+
+.hero-sec {
+  width: 100%;
+  height: calc(100vh - 5rem);
+  background-color: #1d2530;
+}
+.hero-sec-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0;
+  height: 100%;
+}
+.hero-sec-cont .form {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.hero-sec-cont .form-title {
+  font-size: 36px;
+  font-weight: 600;
+  color: #d91717;
+  font-family: "Fredoka", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.hero-sec-cont .form-cont {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.hero-sec-cont .form-cont ::selection {
+  background-color: #d91717;
+}
+.hero-sec-cont .form-cont .email-cont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: relative;
+  border-bottom: 2px solid #fff;
+}
+.hero-sec-cont .form-cont .email-cont input {
+  width: 100%;
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  font-family: "Fredoka", sans-serif;
+}
+.hero-sec-cont .form-cont .password-cont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: row;
+  gap: 0.5rem;
+  position: relative;
+  border-bottom: 2px solid #fff;
+}
+.hero-sec-cont .form-cont .password-cont input {
+  width: 90%;
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  font-family: "Fredoka", sans-serif;
+}
+.hero-sec-cont .form-cont .password-cont button {
+  width: 10%;
+  padding: 0.5rem;
+  border-radius: none;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-family: "Fredoka", sans-serif;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  font-family: "Fredoka", sans-serif;
+}
+.hero-sec-cont .form-cont .password-cont button:hover {
+  color: #d91717;
+}
+.hero-sec-cont .form-cont .sign-in-btn {
+  margin-top: 1rem;
+  width: 50%;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: #d91717;
+  color: #fff;
+  font-family: "Fredoka", sans-serif;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  font-family: "Fredoka", sans-serif;
+  transition: all 0.1s ease-in-out;
+}
+.hero-sec-cont .form-cont .sign-in-btn:active {
+  transform: scale(0.95);
 }
 
 /*# sourceMappingURL=style.css.map */

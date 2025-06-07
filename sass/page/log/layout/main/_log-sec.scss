@@ -1,2 +1,86 @@
 @use "../../../../variables" as *;
 @use "../../../../mixins" as *;
+
+.hero-sec{
+  width: 100%;
+  height: calc(100vh - 5rem);
+  background-color: $bg-slate;
+
+  &-cont{
+    @include flexBox(center, center, column, 0);
+    height: 100%;
+
+    .form{
+      width: 100%;
+      max-width: 400px;
+      padding: 2rem;
+      @include flexBox(center, center, column, 1rem);
+      // background-color: $bg-white;
+
+      &-title{
+        @include font($fs-36, $fw-6, $color-red, $fredoka);
+        text-transform: uppercase;
+        letter-spacing: 5px;
+      }
+
+      &-cont{
+        width: 100%;
+        margin-top: 2rem;
+        @include flexBox(center, center, column, 2rem);
+
+        ::selection{
+          background-color: $color-red;
+        }
+
+        .email-cont{
+          width: 100%;
+          @include flexBox(center, start, column, .5rem);
+          position: relative;
+          border-bottom: 2px solid $color-white;
+          input{
+            width: 100%;
+            padding: .5rem;
+            outline: none;
+            border: none;
+            background-color: transparent;
+            @include font($fs-16, $fw-4, $color-white, $fredoka);
+          }
+        }
+        .password-cont{
+          width: 100%;
+          @include flexBox(center, start, row, .5rem);
+          position: relative;
+          border-bottom: 2px solid $color-white;
+          input{
+            width: 90%;
+            padding: .5rem;
+            outline: none;
+            border: none;
+            background-color: transparent;
+            @include font($fs-16, $fw-4, $color-white, $fredoka);
+          }
+          button{
+            width: 10%;
+            @include button(.5rem, none, none, transparent, $color-white);
+            @include font($fs-16, $fw-4, $color-white, $fredoka);
+
+            &:hover{
+              color: $color-red;
+            }
+          }
+        }
+        .sign-in-btn{
+          margin-top: 1rem;
+          width: 50%;
+          @include button(.5rem, 1rem, none, $color-red, $color-white);
+          @include font($fs-16, $fw-4, $color-white, $fredoka);
+          transition: all .1s ease-in-out;
+
+          &:active{
+            transform: scale(.95);
+          }
+        }
+      }
+    }
+  }
+}

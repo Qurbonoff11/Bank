@@ -1,0 +1,35 @@
+@use "./variables" as *;
+
+@mixin flexBox($justify, $align, $direction, $gap) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+  gap: $gap;
+}
+
+@mixin font($size, $weight, $color, $family) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  font-family: $family;
+}
+
+@mixin button($padding, $border-radius, $border, $bg-color, $color) {
+  padding: $padding;
+  border-radius: $border-radius;
+  border: $border;
+  background-color: $bg-color;
+  color: $color;
+  font-family: $fredoka;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+@mixin position($position, $top, $right, $bottom, $left) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}

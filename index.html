@@ -17,13 +17,64 @@
   <!-- STYLE CSS -->
   <link rel="stylesheet" href="./style/style.css">
 
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="./assets/img/bank-favicon.png" type="image/x-icon">
+
   <!-- TITLE -->
   <title>Bank</title>
 </head>
 
 <body>
 
-  
+  <header class="header">
+    <div class="container header-cont">
+      <a href="#" class="header-cont-logo">
+        Bank
+      </a>
+
+      <ul>
+        <li>
+          <button class="sign-up-btn">
+            Sign up
+          </button>
+        </li>
+        <li>
+          <button class="sign-in-btn">
+            Sign in
+          </button>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="hero-sec">
+      <div class="container hero-sec-cont">
+        <div class="form">
+          <h1 class="form-title">
+            Sign in
+          </h1>
+
+          <div class="form-cont">
+            <div class="email-cont">
+              <input type="email" name="email" id="email" placeholder="Username" autocomplete="off">
+            </div>
+            <div class="password-cont">
+              <input type="password" name="password" id="password" placeholder="Password" autocomplete="off">
+              <button>
+                <i class="ri-eye-line"></i>
+              </button>
+            </div>
+            <button class="sign-in-btn">
+              Sign in
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <script src="./js/script.js"></script>
 </body>
